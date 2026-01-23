@@ -1,5 +1,6 @@
 return {
-  -- Darkman handles automatic theme change when system color changes
+  -- Darkman.nvim handles automatic theme change when system color changes.
+  -- You need to install darkman for it to work.
   {
     '4e554c4c/darkman.nvim',
     event = 'VimEnter',
