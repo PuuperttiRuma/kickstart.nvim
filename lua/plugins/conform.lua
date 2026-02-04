@@ -31,6 +31,7 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       typescript = { 'prettierd' },
+      typescriptreact = { 'prettierd' },
       -- Conform can also run multiple formatters sequentially
       python = { 'isort', 'black' },
       --
