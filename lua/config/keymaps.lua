@@ -36,3 +36,15 @@ vim.keymap.set('i', '<A-j>', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move Down' })
 vim.keymap.set('i', '<A-k>', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move Up' })
 vim.keymap.set('v', '<A-j>', ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = 'Move Down' })
 vim.keymap.set('v', '<A-k>', ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = 'Move Up' })
+
+-- Bracket navigation using unused Finnish characters
+vim.keymap.set({ 'n', 'v', 'o' }, 'ö', '[', { remap = true })
+vim.keymap.set({ 'n', 'v', 'o' }, 'ä', ']', { remap = true })
+vim.keymap.set({ 'n', 'v', 'o' }, 'Ö', '{', { remap = true })
+vim.keymap.set({ 'n', 'v', 'o' }, 'Ä', '}', { remap = true })
+
+vim.keymap.set('n', 'öö', '[[', { remap = true })
+vim.keymap.set('n', 'ää', ']]', { remap = true })
+
+vim.keymap.set('n', 'å', '/', { remap = true })
+vim.keymap.set('n', 'Å', '?', { remap = true })
